@@ -1,0 +1,23 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Custom
+@import 'custom';
+
+// Custom
+@import 'products-actions';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Shopify
+@import '~@shopify/polaris/build/esm/styles';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

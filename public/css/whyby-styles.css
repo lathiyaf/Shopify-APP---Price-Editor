@@ -1,0 +1,86 @@
+
+.whybyuy_grid{
+    padding: 2em .5em .5em;
+	text-align: center;
+}
+
+.whybyuy_grid:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+.whybyuy_grid .whybyuy_grid__item{
+	float: left;	
+}
+
+.whybyuy_grid .whybyuy_large--one-second{
+	width:50%;
+}
+
+.whybyuy_grid .whybyuy_large--one-third{
+	width:33%;
+}
+
+.whybyuy_grid .whybyuy_large--one-forth{
+	width:25%;
+}
+
+#icon-show-innercover .whybyuy-icon-show{
+	max-width: 100%;
+	width: 150px;
+	margin: auto;
+	display: block;
+	max-height: 130px;
+	margin-bottom: 20px;
+}
+
+#icon-show-innercover.fa{
+	max-width: 100%;
+	width: 150px;
+	font-size: 110px;
+	text-align: center;
+	margin: auto;
+	display: block;
+	background-image:unset!important;
+}
+
+#icon-show-innercover.fa .whybyuy-icon-show{
+	display:none;
+}
+
+#icon-show-innercover{
+    width: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size:cover;
+	margin: auto;
+}
+
+.whybyuy_size_Large #icon-show-innercover {
+	height: 100px;
+	max-width: 100px;
+	font-size:100px;
+}
+
+.whybyuy_size_Medium #icon-show-innercover {
+	height: 75px;
+	max-width: 75px;
+	font-size: 75px;
+}
+
+.whybyuy_size_Small #icon-show-innercover {
+	height: 50px;
+	max-width: 50px;
+	font-size:50px;
+}
+
+.whybyuy_grid__item  h3 {
+	padding: 10px;
+}
+
+body .ui-widget.ui-widget-content.ui-tooltip {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}

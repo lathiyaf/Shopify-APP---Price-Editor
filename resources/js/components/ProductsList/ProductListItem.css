@@ -1,0 +1,928 @@
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.aspect-ratio--square {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.aspect-ratio--square--50 {
+    width: 50px;
+    padding-bottom: 50px;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.aspect-ratio--square {
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.aspect-ratio {
+    position: relative;
+    display: block;
+    background: #fafbfc;
+    padding: 0;
+}
+
+.aspect-ratio::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(195, 207, 216, 0.3);
+}
+
+.aspect-ratio__content {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.ProductListItem__Main {
+    display: flex;
+}
+
+.ProductListItem__Title {
+    font-weight: 600;
+}
+
+.ProductListItem__Orders {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.ProductListItem__Orders > *:not(:first-child)::before {
+    content: '•';
+    margin: 0 4px;
+    color: #919eab; /* ink, lightest */
+}
+
+.ProductListItem__OrderCount {
+    white-space: nowrap;
+}
+
+.ProductListItem__TotalSpent {
+    display: flex;
+    min-width: 0;
+    justify-content: flex-end;
+}
+
+.ProductListItem__Exceptions {
+    margin-top: 4px;
+}
+
+.ProductListItem__ConditionalActions {
+    margin-top: 4px;
+}
+
+@media (min-width: 640px) {
+
+    .ProductListItem__Main > *:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .ProductListItem__Orders {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .ProductListItem__Orders > *:not(:first-child)::before {
+        display: none;
+    }
+
+    .ProductListItem__OrderCount {
+        min-width: 80px;
+    }
+
+    .ProductListItem__TotalSpent {
+        min-width: 168px;
+    }
+}
+
+.ProductListItem__Media img {
+    width: 50px;
+}
+
+.Polaris-ProgressBar {
+    margin-bottom: 10px;
+}
+
+
+.ProductListItem__Info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.ProductListItem__InventoryInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ProductListItem__Flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-basis: 0;
+    width: 120px;
+}
+
+.ProductListItem__Flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+@media (min-width: 800px) {
+    .ProductListItem__Media {
+        width: 50px;
+    }
+
+    .ProductListItem__Info > *:not(:last-child) {
+        margin-right: 12px;
+    }
+}
+
+.prices_list_item {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.prices_list_item_title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /*margin-top: -14px;*/
+}
+
+.modal-content {
+    width: 700px !important;
+    display: block !important;
+}
+
+.ProductListItem__Flex1 {
+    min-width: 90px;
+    align-self: center;
+}
+
+.Polaris-ResourceList {
+    overflow-x: auto;
+}
+
+@media (min-width: 992px) {
+    .Polaris-ResourceList__ItemWrapper {
+        display: inline-table;
+    }
+}
+
+
+.Polaris-ResourceList-Item__Owned {
+    align-self:center!important;
+}
+.Polaris-ResourceList__FiltersWrapper div div {
+    z-index: 100;
+}
+.variantUrl {
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+    .ProductListItem__Flex2 {
+        width: 90px;
+    }
+
+    .ProductListItem__Flex1 {
+        min-width: 90px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .ProductListItem__Flex2 {
+        width: 100px;
+        /*max-width: 80px;*/
+        word-break: break-word;
+    }
+
+    .ProductListItem__Flex1 {
+        min-width: 70px;
+        /*max-width: 70px;*/
+        word-break: break-word;
+    }
+
+    #Polaris-Card-Products-List .Polaris-Card {
+        overflow-x: auto!important;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 950px;
+    }
+
+    .Polaris-ResourceList {
+        overflow-x: auto!important;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .ProductListItem__Flex2 {
+        width: 80px;
+        word-break: break-word;
+    }
+
+    .ProductListItem__FlexPrice {
+        max-width: 120px;
+    }
+
+}
+
+
+
+
+@media (max-width: 550px) and (min-width: 455px) {
+
+
+    .ProductListItem__Flex1,
+    .ProductListItem__FlexPrice {
+        max-width: 100px;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 700px;
+    }
+
+}
+
+
+
+@media (max-width: 455px) and (min-width: 355px) {
+
+    .Polaris-ResourceList__HeaderOuterWrapper,
+    .Polaris-ResourceList__FiltersWrapper {
+        width:350px;
+    }
+
+    body {
+        padding: 0!important;
+    }
+
+    .ProductListItem__Flex1,
+    .ProductListItem__FlexPrice {
+        max-width: 70px;
+    }
+
+    .ProductListItem__Flex2 {
+        width: 70px;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 550px;
+    }
+
+}
+
+@media (max-width: 355px) {
+
+    .Polaris-ResourceList__HeaderOuterWrapper,
+    .Polaris-ResourceList__FiltersWrapper {
+        width:310px;
+    }
+
+    body {
+        padding: 0!important;
+    }
+
+    .ProductListItem__Flex1,
+    .ProductListItem__FlexPrice {
+        max-width: 70px;
+        min-width: 70px;
+    }
+
+    .ProductListItem__Flex2 {
+        width: 70px;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 550px;
+    }
+
+}
+
+
+#payingNoticeDiv {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#payingNoticeDiv span {
+    margin-right: 20px;
+}
+
+
+
+#upgrade_plan_btn_products {
+    font-size: 15px;
+    padding-bottom: 5px!important;
+    padding-top: 5px!important;
+}
+
+
+
+#upgradeNowBtn1,
+#upgradeNowBtnTitle,
+#upgradeNowBtn2,
+#upgradeNowBtnPro,
+#upgrade_plan_btn_products
+{
+    transition: all 0.2s ease-out;
+    transition-property: background, border, box-shadow, color;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+    height: auto;
+    white-space: nowrap;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: normal;
+    position: relative;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    background: linear-gradient(to bottom, #6371c7, #5563c1);
+    border-color: #3f4eae;
+    color: #ffffff;
+    box-shadow: inset 0 1px 0 0 #6f7bcb;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#upgradeNowBtn1:hover,
+#upgradeNowBtnTitle:hover,
+#upgradeNowBtn2:hover,
+#upgradeNowBtnPro:hover,
+#upgrade_plan_btn_products:hover
+{
+    background: linear-gradient(to bottom, #5c6ac4, #4959bd);
+    border-color: #3f4eae;
+    color: #ffffff;
+}
+
+#upgradeNowBtnTitle {
+    font-size: 15px;
+    margin-left:10px!important;
+    height: 3.6rem;
+    line-height: 1;
+}
+
+.PolarisCardSync h3 {
+    font-weight: normal!important;
+    font-size: 1.4rem!important;
+}
+
+
+
+.syncProductsWrap sup {
+    top: -1.5em;
+    right: 0.2em;
+
+    /*top: -1em;*/
+    /*right: 0.5em;*/
+}
+
+#products-tab .Polaris-FormLayout__Item:first-child {
+    flex: 0.4;
+}
+
+.submitButton button {
+    color: white;
+    /*font-weight: bold;*/
+    background: linear-gradient(to bottom, #5d6bc4, #5d6bc4)!important;
+}
+
+.submitButton button * {
+    /*font-weight: bold!important;*/
+}
+
+.submitButton {
+    padding-top: 20px;
+    width: 85px;
+    margin: 0 auto;
+}
+
+.submitButtonUpgrade {
+    width:110px;
+    margin:0 auto;
+}
+
+#buttonFormLayoutWrap .Polaris-FormLayout__Item {
+    width: 100%!important;
+    max-width: 100%!important;
+    flex: none!important;
+    margin-left: 0!important;
+}
+.Polaris-Subheading {
+    text-align: left;
+    font-size: 1.8rem!important;
+    display: inline-block;
+    padding:6px;
+}
+
+#viewAllHistoryWrap,
+#viewAllSchedulingWrap
+{
+    width: 75px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+#viewAllSchedulingWrap button,
+#viewAllHistoryWrap button {
+    color: #3490dc;
+    text-decoration: none;
+    line-height: 1.428;
+    font-size: 15px;
+}
+
+#viewAllSchedulingWrap button:hover,
+#viewAllHistoryWrap button:hover {
+    text-decoration: underline;
+}
+
+#mainPageHistoryBlockWrap,
+#mainPageSchedulingBlockWrap {
+    position: relative;
+}
+
+#upgradeToProHover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+#upgradeToPro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    width:100%;
+    height: 100%;
+    top: 20%;
+
+}
+
+#upgradeToPro > div {
+    width:50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#upgradeToPro > div * {
+    text-align: center;
+}
+
+
+
+.Polaris-Tabs__Tab {
+
+    height: 30px;
+
+    background: linear-gradient(180deg,#fff,#f9fafb);
+    border: .1rem solid #c4cdd5;
+    box-shadow: 0 1px 0 0 rgba(22,29,37,.05);
+    border-radius: 3px;
+    color: #212b36;
+
+    min-height: 3.6rem;
+    min-width: 1.8rem;
+    margin: 7px!important;
+    padding: .7rem 1.6rem!important;
+    line-height: 1;
+    width: 90% !important;
+}
+
+.Polaris-Tabs__Tab:hover {
+    background: linear-gradient(180deg,#f9fafb,#f4f6f8);
+    border-color: #c4cdd5;
+}
+
+.Polaris-Tabs__TabContainer {
+    margin-right: 15px;
+}
+
+.Polaris-Tabs__Tab > span {
+    padding: 0!important;
+    line-height: 9px;
+    border-bottom: none!important;
+    color: #212b36;
+
+}
+
+.Polaris-Tabs__Tab > span:hover {
+    color: #212b36;
+
+}
+
+.Polaris-Tabs .Polaris-Tabs__TabContainer:nth-child(1):not(:nth-last-child(2))  {
+    display: none;
+}
+
+#feedback span:after {
+    font-family: "FontAwesome";
+    content: "\f164";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-left: 5px;
+    color: orange;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+#Polaris-Card-Updates-List .Polaris-Card__Section,
+#Polaris-Card-ScheduledUpdates-List .Polaris-Card__Section {
+    padding-left:0;
+    padding-right:0;
+}
+
+.Polaris-Heading {
+    text-align: center;
+}
+
+.syncProductsWrap {
+    position: absolute;
+    padding-top: 24px;
+    right: 32px;
+}
+
+#formLayoutFields .Polaris-FormLayout__Item:nth-child(1) {
+    min-width: 275px;
+    width: 275px;
+}
+
+#formLayoutFields .Polaris-FormLayout__Item:nth-child(2) {
+    min-width: 35px;
+    width: 35px;
+    flex-basis: 35px;
+}
+
+#formLayoutFields .Polaris-FormLayout__Item:nth-child(3) {
+    min-width: 210px;
+    width: 210px;
+}
+
+
+#formLayoutFields .Polaris-FormLayout__Item:nth-child(4) {
+    min-width: 235px;
+}
+
+.Polaris-Tabs__TabContainer button {
+    padding: 0;
+}
+
+
+#Polaris-Card-Products-List,
+#Polaris-Card-Right-Column > .Polaris-Card > .Polaris-Card__Header,
+#Polaris-Card-Products-List > .Polaris-Card > .Polaris-Card__Header,
+.Polaris-Tabs,
+#Polaris-Card-Right-Column {
+    background-color: #f4f6f8;
+}
+
+#Polaris-Card-Products-List > .Polaris-Card,
+#Polaris-Card-Right-Column > .Polaris-Card {
+    box-shadow: none!important;
+}
+
+
+#resourceListFiltersWrap .Polaris-Connected__Item .Polaris-TextField * {
+    z-index: 101;
+}
+
+#resourceListFiltersWrap .Polaris-Connected__Item .Polaris-TextField__Backdrop {
+    z-index: 100;
+}
+
+.Polaris-BulkActions__BulkActionButton .Polaris-Button,
+.Polaris-BulkActions__BulkActionButton .Polaris-Button:active,
+.Polaris-BulkActions__BulkActionButton .Polaris-Button:hover {
+    background: linear-gradient(180deg,#6371c7,#5563c1);
+    box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgba(22,29,37,.05), 0 0 0 0 transparent;
+    border-color: #3f4eae;
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+
+@media (min-width: 992px) {
+
+    .Polaris-BulkActions__BulkActionButton .Polaris-Button {
+        display: none;
+    }
+}
+
+
+#products-tab {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+
+#content > div > div.Polaris-Card {
+    background-color: #f4f6f8;
+}
+
+#products-tab >  .Polaris-Card {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 568px) {
+    #products-tab {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.Polaris-Tabs__TabContainer {
+    margin-left: 2rem;
+    margin-right: 0!important;
+}
+
+
+
+body *:not(i) {
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif!important;
+}
+
+
+#Polaris-Card-Updates-List {
+    margin-right: 0.5px;
+
+}
+
+
+#Polaris-Card-Right-Column #actionsCardWrap {
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    border-radius:3px;
+}
+
+#Polaris-Card-Products-List > .Polaris-Card > .Polaris-Card {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+#Polaris-Card-Updates-List > .Polaris-Card {
+    margin-left: 0;
+}
+#headerPaginationWrap {
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+    margin-right: 1px;
+    margin-left: 1px;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+#headerPaginationWrapDown {
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+    margin-right: 1px;
+    margin-left: 1px;
+    background-color: white;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#Polaris-Card-Products-List > .Polaris-Card {
+    background-color: #f4f6f8;
+}
+
+#Polaris-Card-Products-List  .Polaris-Card__Header {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 30.625em){
+    .Polaris-Pagination__Button {
+        display: inline-flex!important;
+        width: auto!important;
+    }
+    .Polaris-Pagination {
+        display: inline-flex!important;
+        width: auto!important;
+    }
+}
+
+#Polaris-Card-Right-Column .Polaris-Button {
+    fill: none;
+    border:none;
+    box-shadow: none;
+}
+
+#actionsCardWrap .Polaris-FormLayout__Item {
+    margin-left: 1rem!important;
+}
+
+
+#Polaris-Card-Updates-List .Polaris-Card__SectionHeader,
+#Polaris-Card-ScheduledUpdates-List .Polaris-Card__SectionHeader {
+    margin-bottom: -35px;
+}
+
+
+#actionsCardWrap .Polaris-Card__SectionHeader {
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.productTitleWrap {
+    position: absolute;
+}
+
+.CustomerListFooter {
+    border-top:none!important;
+}
+
+#Polaris-Card-Products-List > .Polaris-Card > .Polaris-Card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+#mainHeaderPlanInfo {
+    text-align: center;
+    background-color: #f4f6f8;
+}
+
+
+#Polaris-Card-Products-List {
+    box-shadow: none!important;
+}
+
+
+.Polaris-Tag {
+    background-color: white;
+}
+
+
+#priceRoundingSection,
+#priceSchedulingSection {
+    display: none;
+    margin-top: 20px;
+    margin-left:0;
+    margin-right:0;
+}
+
+#priceRoundingSectionShow,
+#priceSchedulingSectionShow,
+#priceSchedulingSection {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#priceSchedulingSectionShow label {
+    padding: 0;
+    padding-left: 10px;
+}
+
+
+#updatePriceRoundStepWrap {
+    width: 19rem;
+}
+
+#priceRoundingSectionShow,
+#priceSchedulingSectionShow {
+    color:#637381;
+}
+
+#trialInfoBanner .Polaris-Banner__Heading * {
+    text-align: left;
+}
+
+#Polaris-Card-Syncing-Trial-Used {
+    background-color: #f4f6f8;
+}
+
+#products-panel > .Polaris-Card__Section {
+    padding-top: 0;
+}
+
+#products-panel > .Polaris-Card__Section > .Polaris-Card {
+    box-shadow: none;
+}
+
+.Polaris-Banner--withinContentContainer.Polaris-Banner--statusInfo {
+    transition: box-shadow 200ms cubic-bezier(0.64, 0, 0.35, 1);
+    transition-delay: 100ms;
+    box-shadow: inset 0 3px 0 0 #47c1bf, inset 0 0 0 0 transparent, 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15)!important;
+    background-color: #eef9f9;
+}
+
+.react-date-picker__calendar {
+    z-index: 15;
+}
+
+#schedulingStartPopover .Polaris-Scrollable--vertical {
+    overflow-y: initial;
+}
+
+
+.updateFailWarning {
+    color: red;
+}
+
+.SchedulingCalendarWrap .react-date-picker__wrapper,
+.SchedulingCalendarWrap .react-time-picker__wrapper {
+    border: none;
+    color: black;
+}
+
+.SchedulingCalendarWrap,
+.SchedulingCalendarWrap {
+    cursor: default
+}
+
+#schedulingOptionsWrap {
+    margin-top: 15px;
+}
+
+#schedulingOptionsWrap .schedulingEndDateCheckboxWrap {
+    margin-top:10px;
+}
+
+#schedulingOptionsWrap .schedulingEndDayWrap {
+    margin-top: 15px;
+}
+
+
+/*.Polaris-ResourceList-BulkActions__Group--smallScreen {*/
+    /*display: none!important*/
+/*}*/
+
+/*.Polaris-ResourceList-BulkActions__Group--largeScreen {*/
+    /*display: flex!important*/
+/*}*/
+
+.schedulingDailyEndTime {
+    margin-top: 20px;
+}
+
+
+#priceSchedulingSectionShow label {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+
+
+
+

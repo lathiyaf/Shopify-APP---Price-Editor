@@ -1,0 +1,136 @@
+
+/* whybyuy main page*/
+.Polaris-Page__Content .whybyuy-form{
+	display :block;
+}
+
+/* jQueary tabs */
+#tabs .Polaris-Tabs__Tab:focus{
+	box-shadow:none;
+}
+
+/* primary button */
+.Polaris-Page__PrimaryAction a:hover{
+    text-decoration: none;
+}
+
+/* Main page table */
+.check_box_colm{
+	width:50px
+}
+.icon_id_colm{
+	width:150px
+}
+
+.icon_control_colm div {
+    display: inline-block;
+    padding: 5px;
+}
+
+#custom-message-gift{
+   min-height: 300px;
+}
+#user_comment{
+   min-height: 300px;
+}
+/* edit Create icons style */
+
+.whyby-icon-preview-cover .Polaris-Labelled__LabelWrapper{
+    margin-top: 1.6rem;
+    margin-left: 2rem;
+}
+
+.icon-show-preview{
+    max-width: 100%;
+    width: 100px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.whyby-icon-preview-cover #icon-show-preview-innercover.fa{
+    max-width: 100%;
+    width: 150px;
+    font-size: 110px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.color-piker-container{
+	min-height: 560px;
+    margin-top: 15px;
+}
+.whyby-icon-preview-cover #icon-show-preview-innercover.fa .icon-show-preview{
+	display:none;
+}
+body{
+    height: auto;
+    min-height: unset;
+	padding: 20px;
+}
+#custom-css-gift{
+	min-height:150px;
+}
+#icon-upload-dropzone{
+	border: 2px solid #f4f4fa;
+    background: #f4f4fa;
+	text-align:center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.custom-css-container{
+	width:50%
+}
+#icon-upload-dropzone.dropzone .dz-preview.dz-image-preview{
+    background: #f4f4fa;
+}
+
+#icon-upload-dropzone svg.icon-upload-svg{
+    margin: auto;
+    display: block;
+    text-align: center;
+    max-width: 180px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: currentColor;
+}
+
+#icon-upload-dropzone.dropzone .dz-preview .dz-image{
+    margin: auto;
+}
+
+#tabs .ui-tabs-panel#font_content{
+    text-align: center;
+}
+
+#tabs .ui-tabs-panel#font_content .fa{
+    width: 10%;
+    min-width: 100px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+#tabs .ui-tabs-panel#font_content .fa.selected-icon {
+    border-color: #000;
+}
+
+#tabs .ui-tabs-panel#font_content .fa:before{
+    font-size: 45px;
+}
+.Polaris-Label label {
+    font-weight: 600;
+    margin-top: 9px;
+}
+
+#massUpdateStatusButtonsWrap > div {
+    display: inline-block;
+}
+
+/*  */

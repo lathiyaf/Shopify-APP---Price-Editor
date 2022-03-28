@@ -1,0 +1,439 @@
+.aspect-ratio--square {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.aspect-ratio--square--50 {
+    width: 50px;
+    padding-bottom: 50px;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.aspect-ratio--square {
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.aspect-ratio {
+    position: relative;
+    display: block;
+    background: #fafbfc;
+    padding: 0;
+}
+
+.aspect-ratio::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(195, 207, 216, 0.3);
+}
+
+.aspect-ratio__content {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.UpdateListItem__Main {
+    display: flex;
+}
+
+.UpdateListItem__Title {
+    font-weight: 600;
+}
+
+.UpdateListItem__Orders {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.UpdateListItem__Orders > *:not(:first-child)::before {
+    content: '•';
+    margin: 0 4px;
+    color: #919eab; /* ink, lightest */
+}
+
+.UpdateListItem__OrderCount {
+    white-space: nowrap;
+}
+
+.UpdateListItem__TotalSpent {
+    display: flex;
+    min-width: 0;
+    justify-content: flex-end;
+}
+
+.UpdateListItem__Exceptions {
+    margin-top: 4px;
+}
+
+.UpdateListItem__ConditionalActions {
+    margin-top: 4px;
+}
+
+@media (min-width: 640px) {
+
+    .UpdateListItem__Main > *:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .UpdateListItem__Orders {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .UpdateListItem__Orders > *:not(:first-child)::before {
+        display: none;
+    }
+
+    .UpdateListItem__OrderCount {
+        min-width: 80px;
+    }
+
+    .UpdateListItem__TotalSpent {
+        min-width: 168px;
+    }
+}
+
+.UpdateListItem__Media img {
+    width: 50px;
+}
+
+.Polaris-ProgressBar {
+    margin-bottom: 10px;
+}
+
+
+.UpdateListItem__Info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.UpdateListItem__InventoryInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.UpdateListItem__Flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-basis: 0;
+
+}
+
+.UpdateListItem__Flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+@media (min-width: 800px) {
+    .UpdateListItem__Media {
+        width: 50px;
+    }
+
+    .UpdateListItem__Info > *:not(:last-child) {
+        margin-right: 12px;
+    }
+}
+
+.prices_list_item {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.prices_list_item_title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /*margin-top: -14px;*/
+}
+
+.modal-content {
+    width: 700px !important;
+    display: block !important;
+}
+
+.UpdateListItem__Flex1 {
+    min-width: 90px;
+    align-self: center;
+}
+
+
+.Polaris-ResourceList-Item__Owned {
+    align-self:center!important;
+}
+
+.variantUrl {
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+    .UpdateListItem__Flex2 {
+        min-width: 80px;
+    }
+
+    .UpdateListItem__Flex1 {
+        min-width: 90px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .UpdateListItem__Flex2 {
+        min-width: 80px;
+        /*max-width: 80px;*/
+        word-break: break-word;
+    }
+
+    .UpdateListItem__Flex1 {
+        min-width: 70px;
+        /*max-width: 70px;*/
+        word-break: break-word;
+    }
+
+    #Polaris-Card-Updates-List .Polaris-Card {
+        overflow-x: auto!important;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 950px;
+    }
+
+    .Polaris-ResourceList {
+        overflow-x: auto!important;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .UpdateListItem__Flex2 {
+        min-width: 80px;
+        max-width: 80px;
+        word-break: break-word;
+    }
+
+    .UpdateListItem__FlexPrice {
+        max-width: 120px;
+    }
+
+}
+
+
+
+
+@media (max-width: 550px) and (min-width: 455px) {
+
+
+    .UpdateListItem__Flex1,
+    .UpdateListItem__FlexPrice {
+        max-width: 100px;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 700px;
+    }
+
+}
+
+
+
+@media (max-width: 455px) and (min-width: 355px) {
+
+    .Polaris-ResourceList__HeaderOuterWrapper,
+    .Polaris-ResourceList__FiltersWrapper {
+        width:350px;
+    }
+
+    body {
+        padding: 0!important;
+    }
+
+    .UpdateListItem__Flex1,
+    .UpdateListItem__Flex2,
+    .UpdateListItem__FlexPrice {
+        max-width: 70px;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 550px;
+    }
+
+}
+
+@media (max-width: 355px) {
+
+    .Polaris-ResourceList__HeaderOuterWrapper,
+    .Polaris-ResourceList__FiltersWrapper {
+        width:310px;
+    }
+
+    body {
+        padding: 0!important;
+    }
+
+    .UpdateListItem__Flex2,
+    .UpdateListItem__Flex1,
+    .UpdateListItem__FlexPrice {
+        max-width: 70px;
+        min-width: 70px;
+    }
+
+    .Polaris-ResourceList__ResourceListWrapper {
+        width: 550px;
+    }
+
+}
+
+.pauseButton,
+.cancelButton,
+.resumeButton,
+.restartButton,
+.rollbackButton,
+.pauseRollbackButton,
+.cancelRollbackButton,
+.resumeRollbackButton,
+.restartRollbackButton {
+    padding: 5px;
+}
+
+.pauseButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #FFDE16, #FFD52F)!important;
+}
+
+.cancelButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, red, #FF6266)!important;
+}
+
+.resumeButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, green, #5A8039)!important;
+}
+
+.restartButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, green, #5A8039)!important;
+}
+
+.rollbackButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #5d6bc4, #5d6bc4)!important;
+}
+
+.pauseRollbackButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #FFDE16, #FFD52F)!important;
+}
+
+.cancelRollbackButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, red, #FF6266)!important;
+}
+
+.resumeRollbackButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, green, #5A8039)!important;
+}
+
+.restartRollbackButton button {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, green, #5A8039)!important;
+}
+
+
+.UpdateListItem__FlexReport div{
+    width: 100%;
+}
+
+.UpdateListItem__FlexReport p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#updates_content {
+    margin-top: 2.8rem;
+}
+
+#Polaris-Card-Updates-List .Polaris-ResourceList__ItemWrapper {
+    display: list-item;
+}
+
+
+@media (min-width: 990px) {
+    #mainPageHistoryBlockWrap #Polaris-Card-Updates-List .Polaris-ResourceList__ItemWrapper {
+        display: inline-table;
+    }
+}
+
+
+#Polaris-Card-Updates-List .ProductListItem__Flex2 {
+    align-self:center;
+}
+
+#updates_content .Polaris-Button {
+    fill: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.UpdateListItem__Flex15 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1.5;
+    flex-basis: 0;
+}
+
+.UpdateListItem__FlexButtons > div {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
